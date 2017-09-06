@@ -15,6 +15,6 @@ function draw() {
     ellipse(150, 200, 50, 30);
     ellipse(250, 200, 50, 30);
     
-    line( )
+    line(100, 300, 700, 200)
     
 }
