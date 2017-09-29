@@ -1,15 +1,18 @@
 function setup() {
-	createCanvas(840, 660);
-	background("whitesmoke");
+	createCanvas(830, 550);
+	background("black");
     
-	var str1 = "* Revenge *";
+	var str1 = "CRISTIAN";
     
-	textSize(70);
-	fill("black");
-	textFont("Comic Sans MS");
+    fill("black")
+    rect (305, 230, 360, 100)
+    
+	textSize(100);
+	fill("orange");
+	textFont("Courier New");
 	textStyle(ITALIC);
-	stroke("orange");
+	stroke("white");
 	strokeWeight(6);
-	text(str1, 0, 100);
-	
+	text(str1, 170, 300);
+    
 }
