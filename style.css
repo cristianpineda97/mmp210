@@ -8,7 +8,7 @@ ul {
 	font-size: 2em;
 	padding: 0.25em 0;
 	margin-right: 0.5em;
-	display:inline;
+	display: block;
 }
 a {
 	color: red;
@@ -30,11 +30,7 @@ img:hover {
 }
 
 /* home page */
-#home {
-	background-color:white;
+body {
+	background-color:grey;
 	font-family: sans-serif;
-}
-
-#home a {
-	
 }
