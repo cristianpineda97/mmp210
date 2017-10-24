@@ -4,8 +4,7 @@ function setup() {
 }
     function draw() {
         
-//        rect (260, 186, 120, 30);
-//        ellipse (320, 200, 50);    
+//        rect (260, 186, 120, 30);  
         
         var offset = 250;
         triangle(170, 75, 300, 165, 425, 75);
