@@ -2,7 +2,13 @@ function setup() {
 	createCanvas(1000, 550);
 	background("black");
 }
+<<<<<<< HEAD
     function draw() {  
+=======
+    function draw() {
+        
+//        rect (260, 186, 120, 30);  
+>>>>>>> 5991fa48d6f92d3e9595fb54a0cecadd2fcd435f
         
         var offset = 250;
         triangle(170, 75, 300, 165, 420, 75);
@@ -24,4 +30,8 @@ for (var x = 0; x <= width; x += columnSize) {
         
 }
         
+<<<<<<< HEAD
     }
+=======
+}
+>>>>>>> 5991fa48d6f92d3e9595fb54a0cecadd2fcd435f
