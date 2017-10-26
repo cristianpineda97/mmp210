@@ -1,37 +1,36 @@
 function setup() {
-	createCanvas(1000, 550);
-	background("black");
+	createCanvas(640, 640);
+	background ("black");
+	noStroke();
 }
-<<<<<<< HEAD
-    function draw() {  
-=======
-    function draw() {
-        
-//        rect (260, 186, 120, 30);  
->>>>>>> 5991fa48d6f92d3e9595fb54a0cecadd2fcd435f
-        
-        var offset = 250;
-        triangle(170, 75, 300, 165, 420, 75);
-        triangle(210, 300, 300, 455, 380, 300);
-        triangle(210, 300, 300, 100, 380, 300);
-        fill("yellow");
-        noStroke();
-        
-        var columnNum = 5;
-var rowNum = 3;
-var columnSize = width/columnNum;
-var rowSize = height/rowNum;
-for (var x = 0; x <= width; x += columnSize) {
-	for (var y = 0; y <= height; y += rowSize) {
-		/* draw window here */
-        
-        ellipse(x,y,50)
-	}
-        
-}
-        
-<<<<<<< HEAD
+
+function mouseClicked() {
+//	design();
+    
+       var space = 5;        
+    var column = width/10;
+    var row = height/10;
+    var r = random(0,255);
+    var g = random(0,255);
+    var b = random(0,255);
+    
+    background(r,g,b);
+    
+	    for (var x = 25; x <= width; x += column) {
+        for (var y = 30; y <= height; y += row) {
+            
+            r = random(200,255);
+            g = random(230,255);
+            b = random(230,255);
+            
+            //ellipse
+            stroke("orange");
+            strokeWeight(1);
+            fill("orange");
+            ellipse(x, y-4 , 40, 40);
+
+            
+		}
     }
-=======
+  
 }
->>>>>>> 5991fa48d6f92d3e9595fb54a0cecadd2fcd435f
