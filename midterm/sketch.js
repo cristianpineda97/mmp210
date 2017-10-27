@@ -1,5 +1,6 @@
 function setup() {
 	createCanvas(640, 640);
+    design();
 }
 
 function design() {
@@ -14,40 +15,46 @@ function design() {
     var g = random(0, 255);
     var b = random(0, 255);
     
-    background(r,g,b);
-
+            if (randomShape == 0) {
+                
+                background("green");
+                
+            } else if (randomShape == 1) {
+        
+                background("red");
+            
+            } else {
+        
+                background("black");
+         
+            }
     
 	for (var x = 10; x < width; x += w) {
 		for (var y = 10; y < height; y += h) {
             
-            
-            
             if (randomShape == 0) {
                 console.log(randomShape);
-                background("green");
+
                 fill("red");
                 rect(x, y-4, 40 ,40);
                 
             } else if (randomShape == 1) {
                 console.log(randomShape);
-                background("red");
+               
                 fill("pink");
                 ellipse(x+20, y+20, 40 ,40);
                 
             } else {
                 console.log(randomShape);
-                background("black");
+            
                 fill("orange");
                 rect(x, y-4, 40 ,40);
             }
-            
             
 		}
 	}
   
 }
-
-
 
 function mouseClicked() {
 	design();
