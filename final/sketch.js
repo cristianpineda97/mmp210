@@ -11,7 +11,6 @@ function setup() {
     var dominoes = loadImage("dominoes.png");
     images.push();
     
-   
 }
 
 function draw() {
