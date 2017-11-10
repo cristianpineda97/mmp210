@@ -1,39 +1,38 @@
+var images = [];
 function setup() {
-	createCanvas(640, 360);
-	bingo = color(255);
+    createCanvas(648, 400);
+    background("red");
+    var apple = loadImage("apple.png");
+    images.push();
+    var bubble = loadImage("bubblegum.png");
+    images.push();
+    var cat = loadImage("cat.png");
+    images.push();
+    var dominoes = loadImage("dominoes.png");
+    images.push();
+    
+   
 }
-    var bingo;
-    var clicked = false;
 
 function draw() {
-	background("black");
 
-	strokeWeight(2);
-	stroke("white");
-	line(width/2, 0, width/2, height);
-	line(0, height/2, width, height/2);
-
-	if (mouseX > width/2 && mouseY > height/2) {
-		rect(width/2, height/2, width, height);
-        text("peek-a-boo", 100, 100);
-        textSize(25)
-		bingo = "yellow";
-        
-	} else if (mouseX < width/2 && mouseY > height/2) {
-		rect(0, height/2, width/2, height);
-		bingo = "red";
-        
-	} else if (mouseX > width/2 && mouseY < height/2){
-		rect(width/2, 0, width, height/2);
-		bingo = "red"; 
-        
-	} else {
-		rect(0, 0, width/2, height/2);
-        text("i see you", 450, 300);
-        textSize(25)
-		bingo = "yellow";
-        
 }
 
-	fill(bingo);
+function mousePressed() {
+    background("red");
+    var letters = [
+        'a',
+        'b',
+        'c',
+        'd'
+    ];
+    
+    var randomLetter = floor(random(0, letters.length));
+    var letter = letters[randomLetter];
+    
+    textWidth(width);
+    textAlign(CENTER);
+    var myName = "cristian";
+    fill("black");
+    text(letter, width/2, height/2);
 }
