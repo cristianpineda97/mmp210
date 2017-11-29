@@ -61,6 +61,7 @@ function preload() {
 function setup() {
     createCanvas(648, 400);
     background("white");
+    text("Directions: Click the button 'Press' in-order to start shuffling through random images that correspond with the letter next to it.");
       textSize("200");
       textFont("Luckiest Guy")
       button = createButton('PRESS');
