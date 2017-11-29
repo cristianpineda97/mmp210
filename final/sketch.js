@@ -1,7 +1,7 @@
 var button;
 var images = [];
 var letters = [];
-var apple, bubblegum,cat, dominoes;
+var apple, bubblegum, cat, dominoes;
 
 function preload() {
     apple = loadImage("img/apple.png");
@@ -12,42 +12,59 @@ function preload() {
     images.push(cat);
     dominoes = loadImage("img/dominoes.png");
     images.push(dominoes);
+    elevator = loadImage("img/elevator.png");
+    images.push(elevator)
 }
 
 function setup() {
     createCanvas(648, 400);
     background("white");
+      textSize("200");
+      textFont("Luckiest Guy")
       button = createButton('PRESS');
       button.position(width/2, 500);
       button.mousePressed(changeImage);
-    console.log(images);
+    // console.log(images);
      letters = [
-        'a',
-        'b',
-        'c',
-        'd'
+        'A',
+        'B',
+        'C',
+        'D',
+        'E',
+        'F',
+        'G',
+        'H',
+        'I',
+        'J',
+        'K',
+        'L',
+        'M',
+        'N',
+        'O',
+        'P',
+        'Q',
+        'R',
+        'S',
+        'T',
+        'U',
+        'V',
+        'W',
+        'X',
+        'Y',
+        'Z',
+       
     ];
-//    image(apple, width/2, height/2);
-//    image(bubblegum, width/2, height/2);
-//    image(cat, width/2, height/2)
-//    image(dominoes, width/2, height/2)
-//    console.log(letters[0]);
+    rectMode(CENTER);
 }
 
 function changeImage() {
-    
-}
+    var r = random(0, 255);
+    var g = random(0, 255);
+    var b = random(0, 255);
+    background(r, g, b);
+  var randomNum = floor (random (0, 26));
+  image(images[randomNum], width/4 - 120, height/2 - 160);
+  fill("white");
+  text(letters[randomNum], width/2 + 100, height/2 + 50)
 
-function mousePressed() {
-//    background("white");
-//   
-//    
-//    var randomLetter = floor(random(0, letters.length));
-//    var letter = letters[randomLetter];
-//    
-//    textWidth(width);
-//    textAlign(CENTER);
-//    var myName = "cristian";
-//    fill("black");
-//    text(letter, width/2, height/2);
-}
+};
