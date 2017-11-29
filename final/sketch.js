@@ -104,7 +104,7 @@ function changeImage() {
     var g = random(0, 255);
     var b = random(0, 255);
     background(r, g, b);
-  var randomNum = floor (random (0, 26));
+  var randomNum = floor (random (0, 25));
   image(images[randomNum], width/4 - 120, height/2 - 160);
   fill("white");
   text(letters[randomNum], width/2 + 100, height/2 + 50)
