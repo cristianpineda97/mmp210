@@ -60,9 +60,15 @@ function preload() {
 
 function setup() {
     createCanvas(648, 400);
-    background("white");
-    text("Directions: Click the button 'Press' in-order to start shuffling through random images that correspond with the letter next to it.");
+    background("pink");
+    
+    var str1 = "Directions: Click the button 'Press' in-order to start shuffling through random images that correspond with the letter next to it.";
+	textAlign(CENTER);
+    textSize("30");
+    textFont("Luckiest Guy")
+    text(str1, 140, 80, 400, 500);
       textSize("200");
+    
       textFont("Luckiest Guy")
       button = createButton('PRESS');
       button.position(width/2, 500);
@@ -98,6 +104,7 @@ function setup() {
        
     ];
     rectMode(CENTER);
+    
 }
 
 function changeImage() {
@@ -108,6 +115,6 @@ function changeImage() {
   var randomNum = floor (random (0, 25));
   image(images[randomNum], width/4 - 120, height/2 - 160);
   fill("white");
-  text(letters[randomNum], width/2 + 100, height/2 + 50)
+  text(letters[randomNum], width/2 + 150, height/2 + 50)
 
 };
