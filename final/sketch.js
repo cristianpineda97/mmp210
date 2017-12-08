@@ -2,7 +2,6 @@ var button;
 var images = [];
 var letters = [];
 var apple, bubblegum, cat, dominoes, elevator, floppydisk, gorilla, hearts, iguana, jackolantern, kite, lens, mansion, nasa, omelette, poker, questionmark, ribbon, superman, television, umbrella, videocamera, waterdrop, xanax, youtube, zombie, clickSound;
-
 var lucky;
 
 function preload() {
