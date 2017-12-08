@@ -3,6 +3,8 @@ var images = [];
 var letters = [];
 var apple, bubblegum, cat, dominoes, elevator, floppydisk, gorilla, hearts, iguana, jackolantern, kite, lens, mansion, nasa, omelette, poker, questionmark, ribbon, superman, television, umbrella, videocamera, waterdrop, xanax, youtube, zombie, clickSound;
 
+var lucky;
+
 function preload() {
     clickSound = loadSound ('button_push.wav');
     apple = loadImage("img/apple.png");
@@ -56,14 +58,17 @@ function preload() {
     youtube = loadImage("img/youtube.png");
     images.push(youtube)
     xzombie = loadImage("img/zombie.png");
-    images.push(zombie)
+    images.push(zombie);
+    
+    lucky = loadFont("Luckiest_Guy/LuckiestGuy-Regular.ttf");
 }
 
 function setup() {
     createCanvas(648, 400);
     background("pink");
     
-    textFont("Luckiest Guy");  
+    console.log(lucky);
+    textFont(lucky);  
     str1 = "Directions: Click the button 'Press' in-order to start shuffling through random images that correspond with the letter next to it.";
     
 	textAlign(CENTER);
