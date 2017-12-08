@@ -1,9 +1,10 @@
 var button;
 var images = [];
 var letters = [];
-var apple, bubblegum, cat, dominoes, elevator, floppydisk, gorilla, hearts, iguana, jackolantern, kite, lens, mansion, nasa, omelette, poker, questionmark, ribbon, superman, television, umbrella, videocamera, waterdrop, xanax, youtube, zombie;
+var apple, bubblegum, cat, dominoes, elevator, floppydisk, gorilla, hearts, iguana, jackolantern, kite, lens, mansion, nasa, omelette, poker, questionmark, ribbon, superman, television, umbrella, videocamera, waterdrop, xanax, youtube, zombie, clickSound;
 
 function preload() {
+    clickSound = loadSound ('button_push.wav');
     apple = loadImage("img/apple.png");
     images.push(apple);
     bubblegum = loadImage("img/bubblegum.png");
@@ -62,14 +63,14 @@ function setup() {
     createCanvas(648, 400);
     background("pink");
     
-    var str1 = "Directions: Click the button 'Press' in-order to start shuffling through random images that correspond with the letter next to it.";
+    textFont("Luckiest Guy");  
+    str1 = "Directions: Click the button 'Press' in-order to start shuffling through random images that correspond with the letter next to it.";
+    
 	textAlign(CENTER);
     textSize("30");
-    textFont("Luckiest Guy")
     text(str1, 140, 80, 400, 500);
-      textSize("200");
+    textSize("200");
     
-      textFont("Luckiest Guy")
       button = createButton('PRESS');
       button.position(width/2, 500);
       button.mousePressed(changeImage);
@@ -103,8 +104,7 @@ function setup() {
         'Z',
        
     ];
-    rectMode(CENTER);
-    
+//    rectMode(CENTER);
 }
 
 function changeImage() {
@@ -116,5 +116,6 @@ function changeImage() {
   image(images[randomNum], width/4 - 120, height/2 - 160);
   fill("white");
   text(letters[randomNum], width/2 + 150, height/2 + 50)
+  clickSound.play();
 
 };
